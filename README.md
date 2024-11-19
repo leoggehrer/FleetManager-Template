@@ -131,7 +131,6 @@ Akzeptiert den Wert für maxFleetWeight.
     - Die Fahrzeuge sollen nach Gesamtgewicht absteigend sortiert werden.
 - `bool AddPassengersToVehicle(string vehicleID, int additionalPassengers)`: Fügt Passagiere zu einem bestimmten Personenfahrzeug hinzu, sofern die Passagier- und Gewichtsbeschränkungen eingehalten werden.
 - `IReadOnlyList<Vehicle> GetByRevenue()`: Gibt eine Liste von `Vehicle` sortiert nach Gesamtumsatz zurück (erstes Element größter Umsatz). 
-- `IReadOnlyList<Vehicle> GetByTotalWeight()`: Gibt eine Liste von `Vehicle` sortiert nach Gesamtgewicht zurück (erstes Element niedrigstes Gewicht). 
 - `override string ToString()`: Gibt die Informationen in einer Liste aus (jeder Eintrag eine Zeile)
 
 **Hinweis:** Erweitere die dazugehörige Test-Klasse um einen Test im Abschnitt '// Add a useful test to the test'. 
