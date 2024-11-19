@@ -23,7 +23,7 @@ Diese abstrakte Klasse dient als Basisklasse für `PassengerVehicle` und `CargoV
 
 **Private Felder und jeweils readonly Properties:**
 
-- `baseWeight (Double)`: Leergewicht des Fahrzeugs.
+- `baseWeight (Double)`: Leergewicht des Fahrzeugs in [kg].
 - `vehicleID (String)`: Eindeutige ID des Fahrzeugs.
 
 **Konstruktor:**
@@ -71,13 +71,13 @@ Diese Klasse erbt von Vehicle.
 
 **Konstruktor:**
 
-Akzeptiert Werte für `vehicleID`, `baseWeight`, `passengerCount` und `ticketPrice`.
+Akzeptiert Werte für `vehicleID`, `baseWeight` in [kg], `passengerCount` und `ticketPrice`.
 Maximal erlaubte Passagieranzahl beträgt 50. Wenn mehr Passagiere hinzugefügt werden, wird der Wert auf 50 korrigiert. Wrid keine Passagieranzahl angegeben, dann wird der Standadwert 20 vergeben.
 
 **Methoden:**
 
 - `override double GetRevenue()`: Gibt den Gesamtumsatz des Fahrzeugs zurück (Passagieranzahl * Ticketpreis).
-- `override double GetTotalWeight()`: Gibt das Gesamtgewicht zurück (baseWeight + (passengerCount * 70)).
+- `override double GetTotalWeight()`: Gibt das Gesamtgewicht in [kg] zurück (baseWeight + (passengerCount * 70)).
 - `override string ToString()`: Gibt die Information des Objektes in folgendem Format zurück (PassengerVehicle ID Gesamtgewicht Gesamtumsatz)
 
 **Hinweis:** Erweitere die dazugehörige Test-Klasse um einen Test im Abschnitt '// Add a useful test to the test'. 
@@ -86,19 +86,19 @@ Maximal erlaubte Passagieranzahl beträgt 50. Wenn mehr Passagiere hinzugefügt 
 
 Diese Klasse erbt von Vehicle.
 
-Private Felder und Properties (read/write):
+**Private Felder und Properties (read/write):**
 
 - `cargoWeight (Double)`: Gewicht der transportierten Fracht (in Tonnen).
 - `ratePerTon (Double)`: Umsatz pro Tonne Fracht.
 
 **Konstruktor:**
 
-Akzeptiert Werte für `vehicleID`, `baseWeight`, `cargoWeight` und `ratePerTon`. Maximale Frachtkapazität beträgt 20 Tonnen. Überschreitungen werden automatisch auf 20 korrigiert.
+Akzeptiert Werte für `vehicleID`, `baseWeight` in [kg], `cargoWeight in [t]` und `ratePerTon` in [EUR/t]. Maximale Frachtkapazität beträgt 20 Tonnen. Überschreitungen werden automatisch auf 20 korrigiert.
 
 **Methoden:**
 
 - `override double GetRevenue()`: Gibt den Gesamtumsatz des Fahrzeugs zurück (cargoWeight * ratePerTon).
-- `override double GetTotalWeight()`: Gibt das Gesamtgewicht zurück (baseWeight + cargoWeight).
+- `override double GetTotalWeight()`: Gibt das Gesamtgewicht in [kg] zurück (baseWeight + cargoWeight // Achtung: Einheiten).
 - `override string ToString()`: Gibt die Information des Objektes in folgendem Format zurück (CargorVehicle ID Gesamtgewicht Gesamtumsatz)
 
 **Hinweis:** Erweitere die dazugehörige Test-Klasse um einen Test im Abschnitt '// Add a useful test to the test'. 
