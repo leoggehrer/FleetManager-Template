@@ -120,6 +120,7 @@ Akzeptiert den Wert für maxFleetWeight.
 
 - `IReadOnlyList<Vehicle> Vehicles`: Gibt die Liste der Fahrzeuge zurück.
 - `int PassengerVehicleCount`: Gibt die Anzahl der Personenfahrzeuge in der Flotte zurück.
+- `double MaxFleetWeight`: Gibt das maximal zulässige Gesamtgewicht der Flotte zurück.
 
 **Methoden:**
 
