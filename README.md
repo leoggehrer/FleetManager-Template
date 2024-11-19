@@ -119,13 +119,13 @@ Akzeptiert den Wert für maxFleetWeight.
 **Properties:**
 
 - `IReadOnlyList<Vehicle> Vehicles`: Gibt die Liste der Fahrzeuge zurück.
-- `int PassengerVehicleCount`: Gibt die Anzahl der Personenfahrzeuge in der Flotte zurück.
 - `double MaxFleetWeight`: Gibt das maximal zulässige Gesamtgewicht der Flotte zurück.
+- `int PassengerVehicleCount`: Gibt die Anzahl der Personenfahrzeuge in der Flotte zurück.
 
 **Methoden:**
 
 - `double GetFleetWeight()`: Berechnet das Gesamtgewicht der Flotte.
-- `Vehicle GetMostProfitableVehicle()`: Gibt das Fahrzeug mit dem höchsten Umsatz zurück oder null, wenn keine Fahrzeuge vorhanden sind.
+- `Vehicle? GetMostProfitableVehicle()`: Gibt das Fahrzeug mit dem höchsten Umsatz zurück oder null, wenn keine Fahrzeuge vorhanden sind.
 - `int GetTotalPassengerCount()`: Gibt die Gesamtanzahl der Passagiere in der Flotte zurück.
 - `bool AddVehicle(Vehicle newVehicle)`: Fügt ein neues Fahrzeug der Flotte hinzu, sofern das maximale Flottengesamtgewicht nicht überschritten wird.
     - Die Fahrzeuge sollen nach Gesamtgewicht absteigend sortiert werden.
