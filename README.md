@@ -71,7 +71,7 @@ Diese Klasse erbt von Vehicle.
 
 **Konstruktor:**
 
-Akzeptiert Werte für `vehicleID`, `baseWeight`, `ticketPrice` und `passengerCount`.
+Akzeptiert Werte für `vehicleID`, `baseWeight`, `passengerCount` und `ticketPrice`.
 Maximal erlaubte Passagieranzahl beträgt 50. Wenn mehr Passagiere hinzugefügt werden, wird der Wert auf 50 korrigiert. Wrid keine Passagieranzahl angegeben, dann wird der Standadwert 20 vergeben.
 
 **Methoden:**
